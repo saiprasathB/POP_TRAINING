@@ -1,0 +1,42 @@
+
+.hi{
+    background-color: rgb(12, 12, 12);
+    color: white;
+    padding: 10px;
+    border-radius: 0px;
+    cursor: pointer;
+}
+.hi:hover{
+    background-color: blueviolet;
+    color: rgb(117, 12, 12);
+    scale: 1.1;
+}
+.hi::shadow{
+    background-color: rgb(19, 17, 20);
+    color: rgb(38, 12, 117);
+    scale: 1.1;
+    width: 2000px;
+    height: 2000px;
+    box-shadow: inset 0px 0px 10px 10px rgb(12, 12, 12);
+}
+#para{
+    background-color: rgb(12, 12, 12);
+    color: white;
+    padding: 10px;
+    border-radius: 0px;
+    cursor: pointer;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+ol{
+    
+    color: rgb(36, 3, 3);
+    padding: 10px;
+    cursor: pointer;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    list-style: circle;
+}
+*{
+    background-color: saddlebrown;
+}
