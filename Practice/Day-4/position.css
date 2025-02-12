@@ -1,0 +1,43 @@
+/* .relative{
+    position: relative;
+    /* margin: 100px; 
+    background-color: aqua;
+    left:50px;
+    top: 50px;
+    z-index: 1;
+}
+.relative1{
+    position: relative;
+    /* margin: 100px; 
+    background-color: aqua;
+    left:50px;
+    top: 50px;
+    z-index: 2;
+
+}
+.relative2{
+    position: relative;
+    /* margin: 100px; 
+    background-color: aqua;
+    left:50px;
+    top: 50px;
+    z-index: 3;
+}
+
+.divclass{
+    height: 50px;
+    background-color: aqua;
+} */
+
+.divabs{
+    margin: 100px;
+    width: 200px;
+    border: 2px solid black;
+    height: 100px;
+}
+
+.abs{
+    position: absolute;
+    left: 50px;
+    top: 50px;
+}
