@@ -1,0 +1,64 @@
+.Transition{
+    color: dimgray;
+    background-color: beige;
+    transition: width 5s,height 5s, background-color 5s,color 5s,transform 5s;
+}
+.Transition:hover{
+    background-color: blue;
+    color: brown;
+    transform: rotate(180deg);
+    width: 200px;
+    height: 200px;
+
+}
+.button{
+    background-color: aqua;
+    transition: background-colour 5s;
+    border-radius: 25px;
+}
+.button:hover{
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+
+}
+.button:active {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    transform: translateY(2px);
+  }
+@keyframes anime{
+    /* from{
+        background-color: blueviolet;
+    }to{
+        background-color: black;
+    } */
+     0%{
+       background-color: black;
+       left: 0px;
+       top: 100px;
+     }
+     25%{
+        background-color: rgb(226, 12, 12);
+        left:100px;
+        top: 0px;
+     }
+     50%{
+        background-color: rgb(15, 227, 39);
+       left: 100px;
+       right: 0px;
+     }
+     75%{
+       background-color: rgb(237, 6, 221);
+       left: 0px;
+       right: 1000px;
+     }
+}
+
+  .animation{
+    animation-name: anime;
+    position: relative;
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+  }
