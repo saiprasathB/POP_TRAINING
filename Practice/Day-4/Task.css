@@ -4,8 +4,17 @@
     border-radius: 50px;
 }
 .title{
- position: fixed;
+ position: sticky;
+ top: 50px;
 }
+
+
+
+
+
+
+
+
 form {
     width: 300px;
     margin: 20px auto;
