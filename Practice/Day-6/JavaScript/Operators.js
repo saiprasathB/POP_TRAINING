@@ -17,3 +17,8 @@ if ('5'!==5){
     console.log("True")}
 else
     {console.log("False")}
+
+
+    console.log(55>>3)
+    console.log(55<<3)
+    "sugge"
