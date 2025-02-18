@@ -22,3 +22,5 @@ else
     console.log(55>>3)
     console.log(55<<3)
     "sugge"
+
+    console.log();
