@@ -1,6 +1,20 @@
-function Home(){
+function Home(x){
+    var styling ={
+        textAlign: 'center',
+        color: 'green',
+        backgroundColor: 'black',
+    }
+    var a=10;
     return(
-        <h1>Home Page</h1>
+        <div>
+        <h1 style={styling}>Home Page  </h1>
+        <h2>prop tag</h2>
+        <h3>
+
+           {x.prop} {x.name}
+
+        </h3>
+        </div>
     )
 }
 export default Home

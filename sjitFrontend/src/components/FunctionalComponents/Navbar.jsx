@@ -1,9 +1,10 @@
+
+import '../Css/Navbarcss.css';
 const Navbar = () => {
     return (
         <header>
         <nav>
           
-            <ul>
                 <li>
                     <a href="/">Home</a>
                 </li>
@@ -19,7 +20,6 @@ const Navbar = () => {
                 <li>
                     <a href="/login">Login</a>
                 </li>
-            </ul>
         </nav></header>
     )
 }
