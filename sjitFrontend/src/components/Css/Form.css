@@ -11,6 +11,7 @@
     height: 300px;
     border-radius: 50px;
     border: 2px solid black;
+    
 }
 h1{
     color: rgb(104, 140, 239);
@@ -40,7 +41,8 @@ input{
     border-radius: 20px;
     text-align: center;
     margin-top: 10px;
+    height: 50px;
 }
-body{
+.body{
     background-color: rgb(4, 93, 93);
 }

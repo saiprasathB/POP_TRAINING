@@ -6,8 +6,10 @@ import SignUp from './components/FunctionalComponents/SignUp'
 import Login from './components/FunctionalComponents/Login'
 import Navbar from './components/FunctionalComponents/Navbar'
 import { BrowserRouter , Routes, Route } from 'react-router-dom'
-import { Link } from 'react-router-dom'
 import UseEffects from './components/FunctionalComponents/Hooks/UseEffects'
+import UseEffectApi from './components/FunctionalComponents/Hooks/UseEffectApi'
+import UseRef from './components/FunctionalComponents/Hooks/UseRef'
+import UseMemo from './components/FunctionalComponents/Hooks/UseMemo'
 function App() {
   return (
    <main>
@@ -19,7 +21,10 @@ function App() {
     <Route path="/contact" element={<Contact></Contact>}></Route>
     <Route path="/signup" element={<SignUp></SignUp>}></Route>
     <Route path="/login" element={<Login></Login>}></Route>
+    <Route path="/use-effect-api" element={<UseEffectApi/>}></Route>
     <Route path="/use-effect" element={<UseEffects/>}></Route>
+    <Route path="/use-ref" element={<UseRef/>}></Route>
+    <Route path="/use-memo" element={<UseMemo/>}></Route>
     </Routes>
     </BrowserRouter>
     {/* /* <Navbar/>

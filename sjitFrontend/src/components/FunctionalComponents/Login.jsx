@@ -2,6 +2,7 @@ import '../Css/Form.css'
 
 function Login(){
     return(
+        <body class="body"> 
       <div> <center><h1>Welcome To my WebSite</h1></center>
  <center><form action="/about"class="form">
         <table>
@@ -20,6 +21,9 @@ function Login(){
         </form>
         </center>
         </div> 
+       
+            
+        </body>
     )
 }
 export default Login

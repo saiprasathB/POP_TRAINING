@@ -5,9 +5,33 @@ nav{
     background-color: #333;
     padding: 10px;
     list-style-type: none;
+    margin-top: -5px;
 }
-*{
-    margin: 0;
-    padding: 0;
+
+
+
+.dropdown{
+    position: relative;
+    display: inline;
+}
+.dropdown-content{
+  
+ position: absolute;
+ background-color: orange;
+ list-style-type: none;
+ min-width: 160px;
+ margin:0px;
+ color: black;
+ border-radius: 25px;
     
+}
+.use{
+    text-align: left;
+    text-decoration: none;
+}
+.use:hover{
+    
+    background-color: rgb(232, 246, 246);
+   
+
 }
