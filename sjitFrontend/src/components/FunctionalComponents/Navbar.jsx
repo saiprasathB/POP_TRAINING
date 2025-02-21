@@ -20,16 +20,23 @@ const Navbar = () => {
                     <Link to='/contact'>Contact</Link>
 
                 </li>
+                <li>
+                    <Link to='/hoc'>Hoc</Link>
 
-                <div class="dropdown" onMouseEnter={()=>setDropdown(!dropdown)}
+                </li>
+
+                <div className="dropdown1" onMouseEnter={()=>setDropdown(!dropdown)}
                 onMouseLeave={()=>setDropdown(!dropdown)}>
                     <span>Hooks</span>
-                   {dropdown && (<ol class="dropdown-content">
-                        <li><Link to='/use-effect' class='use'> UseEffect </Link></li>
-                        <li ><Link to='/use-state' class='use'> UseState </Link></li>
-                        <li ><Link to='/use-effect-api'  class='use'> UseEffectApi </Link></li>
-                        <li ><Link to='/use-ref'  class='use'> UseRef </Link></li>
-                        <li ><Link to='/use-memo'  class='use'> UseMemo </Link></li>
+                   {dropdown && (<ol className="dropdown-content">
+                        <li><Link to='/use-effect' className='use'> UseEffect </Link></li>
+                        <li ><Link to='/use-state' className='use'> UseState </Link></li>
+                        <li ><Link to='/use-effect-api'  className='use'> UseEffectApi </Link></li>
+                        <li ><Link to='/use-ref'  className='use'> UseRef </Link></li>
+                        <li ><Link to='/use-memo'  className='use'> UseMemo </Link></li>
+                        <li ><Link to='/use-callback'  className='use'> UseCallBack </Link></li>
+                        <li ><Link to='/use-memoize' className='use'> UseMemoize </Link></li>
+
                     </ol>)}
 
                 </div>
