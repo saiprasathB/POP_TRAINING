@@ -16,6 +16,7 @@ import HoC from './components/FunctionalComponents/HoC/Hoc'
 import Example1 from './components/FunctionalComponents/Memoization/Example1'
 import Example2 from './components/FunctionalComponents/Memoization/Example2'
 import LazyLoadingAndSuspense from './components/FunctionalComponents/Memoization/LazyLoadingAndSuspense'
+import Exam from './components/FunctionalComponents/ContextApi/Exam'
 function App() {
   return (
    <main>
@@ -35,7 +36,7 @@ function App() {
     <Route path="/use-memoize" element={<UseMemoize/>}></Route>
     <Route path="/hoc" element={<HoC/>}></Route>
     <Route path="/lazyloadingandsupense" element={<LazyLoadingAndSuspense/>}></Route>
-    
+    <Route path="/exam"  element={<Exam/>}> </Route>
     <Route path="/example1"  element={<Example1/>}> </Route>
     <Route path="/example2"  element={<Example2/>}> </Route>
 

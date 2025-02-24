@@ -4,6 +4,7 @@ import { useState } from "react";
 const Navbar = () => {
   var [dropdown, setDropdown] = useState(false);
   var [dropdown1, setDropdown1] = useState(false);
+  var [dropdown2, setDropdown2] = useState(false);
   return (
     <header>
       <nav>
@@ -48,6 +49,26 @@ const Navbar = () => {
           </div>
         </li>
         <li>
+          <div
+            className="dropdown2"
+            onMouseEnter={() => setDropdown2(!dropdown2)}
+            onMouseLeave={() => setDropdown2(!dropdown2)}
+          >
+            <span>prop Drilling</span>
+            {dropdown2 && (
+              <ol className="dropdown-content">
+                <li>
+                  <Link to="/exam" className="use">
+                    {" "}
+                    Exam{" "}
+                  </Link>
+                </li>
+              </ol>
+            )}
+          </div>
+        </li>
+        
+        <li>
           <Link to="/hoc">Hoc</Link>
         </li>
 
@@ -57,7 +78,7 @@ const Navbar = () => {
           onMouseLeave={() => setDropdown(!dropdown)}
         >
           <span>Hooks</span>
-          {dropdown && (
+          {  dropdown && (
             <ol className="dropdown-content">
               <li>
                 <Link to="/use-effect" className="use">
