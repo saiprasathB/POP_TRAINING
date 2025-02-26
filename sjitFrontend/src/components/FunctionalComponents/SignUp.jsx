@@ -1,51 +1,49 @@
-import'../Css/Signup.css'
-function SignUp(){
-    return(
+//import "../css/formstyle.css"
+import { Link } from 'react-router-dom';
+import { useState } from 'react';
+import axios from 'axios'
+function Sign() {
+        const [firstName,setFName]=useState("");
+        const [lastName,setLName]=useState("");
+        const [email,setEmail]=useState("");
+        const [password,setPass]=useState("");
+        const [phoneNumber,setPhoneno]=useState(0);
+        const handleSignUp =(event)=>
+        {
+            event.preventDefault()
+                axios.post("http://localhost:3001/signup",{
+
+                    firstName:firstName,
+                    lastName:lastName,
+                    email:email,
+                    password:password,
+                    phoneNumber:phoneNumber
+                });
+        };
+    return (
         <div>
-             <center><h1>SignIn</h1></center>
-           <center> <form action="/login" class="formsignup">
-        <table border="0" class="table">
-            <tr>
-                <td><label htmlFor="FirstName">FirstName:</label></td>
-                <td><input type="text" placeholder="Enter FirstName" required /></td>
-            </tr>
-            <br />
-            <tr>
-                <td><label htmlFor="SecondName">SecondName:</label></td>
-                <td><input type="text" placeholder="Enter SecondName" required /></td>
-            </tr>
-            <tr>
-                <td><label htmlFor="Email">Email:</label></td>
-                <td><input type="email" placeholder="Enter Email" required /></td>
-            </tr>
-            <tr>
-                <td><label htmlFor="DOB">DOB:</label></td>
-                <td><input type="date" placeholder="Enter DOB" required /></td>
-            </tr>
-            <tr>
-                <td><label htmlFor="Age">Age:</label></td>
-                <td><input type="number" placeholder="Enter Age" required /></td>
-            </tr>
-            <tr>
-                <td><label htmlFor="Gender">Gender:</label></td>
-                <td> <input type="radio" name="gender" value="Male" />Male </td>
-                <td> <input type="radio" name="gender" value="Female" />Female </td>
-            </tr>
-            <tr>
-                <td><label htmlFor="Password">Password:</label></td>
-                <td><input type="password" placeholder="Enter Password" required /></td>
-            </tr>
-            <tr>
-                <td><label htmlFor="ConPassword">ConfirmPassword:</label></td>
-                <td><input type="password" placeholder="Enter Password" required /></td>
-            </tr>
-            
-        </table>
-        <br />
-      <center> <button>SignIn</button></center>
-    </form>
-    </center>  
+            <div>
+                <h1>Sign In</h1>
+                <form onSubmit={handleSignUp}>
+                    <input type="text" id="firstName"placeholder="First Name" value={firstName} onChange={e=>setFName(e.target.value)}  />
+                    <br />
+                    <input type="text" id="lastName" placeholder="Last Name" value={lastName} onChange={e=>setLName(e.target.value)} />
+                    <br />
+                    <input type="email" id="email" placeholder="Email" value={email} onChange={e=>setEmail(e.target.value)} />
+                    <br />
+                    <input type="password" id="password" placeholder="Password" value={password} onChange={e=>setPass(e.target.value)} />
+                    <br />
+                    <input type="text" id="phoneNumber"placeholder="Mobile Number" value={phoneNumber} onChange={e=>setPhoneno(e.target.value)}/>
+                    <br />
+                    <button type="submit">Sign In</button>
+                    <br />
+                    <div>
+                    <h3>Already have an account?<Link to='/signup/login'>Login</Link> </h3>
+                    </div>
+                </form>
+            </div>
         </div>
-    )
+    );
 }
-export default SignUp
+
+export default Sign;
