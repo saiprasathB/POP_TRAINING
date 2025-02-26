@@ -11,7 +11,7 @@ function Sign() {
         const handleSignUp =(event)=>
         {
             event.preventDefault()
-                axios.post("http://localhost:3001/signup",{
+                axios.post("https://pop-training.onrender.com/signup",{
 
                     firstName:firstName,
                     lastName:lastName,
