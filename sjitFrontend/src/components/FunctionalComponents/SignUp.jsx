@@ -40,8 +40,10 @@ function Sign() {
                     <div>
                     <h3>Already have an account?<Link to='/signup/login'>Login</Link> </h3>
                     </div>
+
                 </form>
             </div>
+            <h1>Hello World</h1>
         </div>
     );
 }
