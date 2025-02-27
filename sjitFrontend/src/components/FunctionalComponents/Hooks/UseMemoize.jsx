@@ -19,6 +19,7 @@ const UseMemoize = () => {
         onChange={(e) => setpass(e.target.value)}
       />
       <button>Login</button>
+      <h1>Hello World</h1>
     </div>
   );
 };
